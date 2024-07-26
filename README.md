@@ -1,44 +1,64 @@
-# Pacman, with 2 Player support
-Pacman the original classics with Two-player Mode made using **plain Javascript and HTML5 canvas**.
-Download the files and run index.html to play the game, 
-or simply visit the following link.
- https://bhattaraib58.github.io/Pacman-2Player/
+# PACMAN Game
 
-## Controls:
-Player One
-* Right-Arrow/ Left-Arrow : Move right/left,
-* UP-Arrow/ Down-Arrow : Move UP/Down,
-* Enter: Select
+Welcome to the PACMAN game project! This repository contains the source code for a classic Pacman game built using HTML5, JavaScript, and CSS. 
 
-Player Two
-* A/D : Move right/left,
-* W/S : Move UP/Down,
-* Enter: Select
+## Project Structure
 
+- **`index.html`**: The main HTML file that sets up the canvas and includes necessary scripts.
+- **`css/`**: Contains stylesheets for the project.
+  - `reset.css`: CSS reset file to ensure consistent styling across browsers.
+  - `style.css`: Custom styles for the game.
+- **`script/`**: Contains JavaScript files for different functionalities.
+  - **`Utilities/`**: Utility scripts and constants.
+    - `ImageConstants.js`: Constants related to images.
+    - `GameMaps.js`: Functions for managing game maps.
+    - `constants.js`: General constants used throughout the game.
+    - `GameMode.js`: Handles game modes.
+    - `Utils.js`: Utility functions.
+    - `graph.js`: Functions for graph-related operations.
+    - `astar.js`: Implementation of the A* pathfinding algorithm.
+    - `AudioLoader.js`: Handles audio loading.
+  - **`Components/`**: Scripts related to game components.
+    - `GameMap.js`: Manages the game map.
+    - `Sprite.js`: Manages sprite rendering.
+  - **`Characters/`**: Scripts for game characters.
+    - `GameActors.js`: Base class for game actors.
+    - `Pacman.js`: Script for Pacman character.
+    - **`Ghosts/`**: Scripts for different ghost characters.
+      - `Ghosts.js`: Base class for ghost characters.
+      - `Blinky.js`: Script for Blinky the ghost.
+      - `Pinky.js`: Script for Pinky the ghost.
+      - `Inky.js`: Script for Inky the ghost.
+      - `Clyde.js`: Script for Clyde the ghost.
+  - **`Components/`**: Additional game components.
+    - `Game.js`: Main game logic.
+    - `GameMenu.js`: Game menu logic.
+    - `GameWorld.js`: Manages the game world.
+  - **`script.js`**: Main JavaScript file that initializes and runs the game.
 
+## How to Run
 
-References:
+1. Clone the repository or download the project files.
+2. Open `index.html` in a web browser that supports HTML5 canvas (e.g., Google Chrome, Firefox).
 
-[Design Deliberation] Pac-Man Ghost AI Explained:
+## Features
 
-https://www.youtube.com/watch?v=ICwzQ0_RCcQ&list=WL&index=7&t=0s
+- Classic Pacman gameplay.
+- Various ghost characters with different behaviors.
+- Customizable game maps.
+- Audio support for game sounds.
 
-Pac-Man Kill Screen Explained
+## Contributing
 
-https://www.youtube.com/watch?v=NKKfW8X9uYk&list=WL&index=8&t=0s
+If you'd like to contribute to the project, feel free to fork the repository and submit pull requests. Please ensure your changes are well-documented and tested.
 
-The Pac-Man Dossier!
+## License
 
-https://web.archive.org/web/20150713075020/http://home.comcast.net/~jpittman2/pacman/pacmandossier.html
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
-PAC-MAN GRAPHICS
+## Contact
 
-http://www.classicgaming.cc/classics/pac-man/graphics
+Developed by Nikhil.
 
-Introduction to A* (A-Star) Pathfinding:
+Enjoy the game!
 
-http://www.untoldentertainment.com/blog/2010/08/20/introduction-to-a-a-star-pathfinding-in-actionscript-3-as3-2/
-
-Introduction to the A* Algorithm
-
-https://www.redblobgames.com/pathfinding/a-star/introduction.html
